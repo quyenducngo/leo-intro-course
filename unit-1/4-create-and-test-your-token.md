@@ -136,7 +136,7 @@ Then go ahead and test Transfer Function, let's transfer 10 tokens to other addr
 leo run transfer <recipient's address> 10u32 "<Token Record>"
 ```
 
-This is an example of the output: 
+This is an example of the Test Transfer function: 
 ```bash
 leo run transfer aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq9d 10u32 "{ owner: aleo1abcdefgh..., balance: 100u32.private }"
 ```
