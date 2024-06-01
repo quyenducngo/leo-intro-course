@@ -24,9 +24,10 @@ cd token_...
 
 Then run below code to build and run the program in `main.leo`.
 ```bash
-leo run main 0u32 1u32 # Note that `main` here is the functions name in the program, not the file name.
+leo run main 0u32 1u32 # build & setup & prove & verify
 
 You output should be:
+
 Leo ✅ Compiled 'helloworld.aleo' into Aleo instructions
 ⛓  Constraints
  •'helloworld.aleo/main' - 33 constraints (called 1 time)
