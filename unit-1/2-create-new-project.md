@@ -35,7 +35,7 @@ Leo ✅ Compiled 'helloworld.aleo' into Aleo instructions
  • 1u32
 ```
 
-You should see the output equal to `3u32`.
+You should see the output equal to `1u32`.
 
 To learn more about the Aleo Project Interactions, check out [here](https://developer.aleo.org/leo/hello).
 
