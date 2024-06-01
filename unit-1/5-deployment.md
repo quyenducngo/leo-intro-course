@@ -5,7 +5,7 @@ Create a bash script named `deploy.sh` outside of the token project directory an
 
 Head to your leo folder and run:
 ```bash
-Run nano deploy.sh
+nano deploy.sh
 ```
 
 Enter the following:
