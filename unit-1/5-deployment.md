@@ -3,6 +3,12 @@
 ## Create Deployment Scripts
 Create a bash script named `deploy.sh` outside of the token project directory and copy the following into the file
 
+Head to your leo folder and run:
+```bash
+Run `nano deploy.sh`
+```
+
+Enter the following:
 ```bash
 PROGRAM_ID="<Your Token Project Name>"
 
@@ -14,6 +20,8 @@ snarkos developer deploy \
 --path ./build/ \
 --broadcast https://api.explorer.aleo.org/v1/testnet3/transaction/broadcast
 ```
+
+To save, run control + X, then Y, and then Enter
 
 ## [screenshot required] Request for faucets
 
