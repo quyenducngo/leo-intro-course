@@ -136,6 +136,11 @@ Then go ahead and test Transfer Function, let's transfer 10 tokens to other addr
 leo run transfer <recipient's address> 10u32 "<Token Record>"
 ```
 
+This is an example of the output: 
+```bash
+leo run transfer aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq9d 10u32 "{ owner: aleo1abcdefgh..., balance: 100u32.private }"
+```
+
 Then the output should be two record where 10 tokens are owned under recipient's address, and remaining 90 tokens are owned by the original owner.
 
 Notes:
