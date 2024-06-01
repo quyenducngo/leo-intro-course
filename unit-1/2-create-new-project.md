@@ -44,10 +44,12 @@ To learn more about the Aleo Project Interactions, check out [here](https://deve
 ```bash
 .
 ├── README.md
-├── build # Folder for all built `Aleo` files and manifest file.
-│   ├── main.aleo # `.leo` file will be built into `.aleo`
-│   └── program.json # program description file
-├── program.json # program description file
-└── src # Folder for all Program source codes
-    └── main.leo # define your program logic here
+├── build                   # Folder for all built `Aleo` files and manifest file.
+│   ├── main.aleo           # `.leo` file will be built into `.aleo`
+│   └── program.json        # Program description file
+├── program.json            # Program description file
+├── src                     # Folder for all Program source codes
+│   └── main.leo            # Define your program logic here
+├── inputs                  # Folder for all input files
+├── outputs                 # Folder for all output files
 ```
