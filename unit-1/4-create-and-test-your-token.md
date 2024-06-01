@@ -55,13 +55,76 @@ transition transfer(receiver: address, transfer_amount: u32, input: Token) -> (T
 }
 ```
 
+### Final Step: overview of your main.leo file
+This is what your leo.main file output
+
+```leo
+program [your_token_name].aleo {
+// Step one: define your token record
+record Token {
+    // The token owner, any record must be defined with the `owner` field.
+    owner: address,
+    // Token balance of the user.
+    balance: u32,
+}
+
+// Step two: define mint function
+transition mint(amount: u32) -> Token {
+    return Token {
+        owner: self.caller,
+        balance: amount,
+    };
+}
+
+// Step three: define transfer function
+transition transfer(receiver: address, transfer_amount: u32, input: Token) -> (Token, Token) {
+    let sender_balance: u32 = input.balance - transfer_amount;
+    let recipient: Token = Token {
+        owner: receiver,
+        balance: transfer_amount,
+    };
+
+    let sender: Token = Token {
+        owner: self.caller,
+        balance: sender_balance,
+    };
+
+    return (recipient, sender);
+}
+}
+```
+
 ## Test Program
 
 ### [screenshot required] Test Mint function
 
+Build Leo.
+```bash
+leo build
+
+Ensure you see "Leo ✅ Compiled '[your_token_name].aleo' into Aleo instructions"
+```
+
 First Test Mint Function.
 ```bash
 leo run mint 100u32
+
+Ensure you see:
+
+       Leo ✅ Compiled 'your_token_name.aleo' into Aleo instructions
+
+⛓  Constraints
+
+ •  '[your_token_name].aleo/mint' - 2,020 constraints (called 1 time)
+
+➡️  Output
+
+ • {
+  owner: [number].private,
+  balance: 100u32.private,
+  _nonce: [number]group.public
+}
+
 ```
 
 The output should be a record of new 100 tokens.
