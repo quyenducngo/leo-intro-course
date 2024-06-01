@@ -24,6 +24,11 @@ Build and install `leo` CLI
 cargo install --path .
 ```
 
+Now to use leo, in your terminal, run:
+```bash
+leo
+```
+
 For more details about how to use `leo` Cli, check out [here](https://developer.aleo.org/leo/commands)
 
 ## [screenshot required] Install snarkOS
