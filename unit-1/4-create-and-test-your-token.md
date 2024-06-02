@@ -143,6 +143,20 @@ leo run transfer aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
 
 Then the output should be two record where 10 tokens are owned under recipient's address, and remaining 90 tokens are owned by the original owner.
 
+This is an example output you should see:
+```bash
+{
+  "recipient": {
+    "owner": "aleo1xyz...",
+    "balance": 10u32.private
+  },
+  "sender": {
+    "owner": "aleo1...",
+    "balance": 90u32.private
+  }
+}
+```
+
 Notes:
 - Remember to replace <recipient's address> field to actual address of the recipient.
 - input token record should be the one that is returned after you minted. 
