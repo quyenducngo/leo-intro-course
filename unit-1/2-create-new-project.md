@@ -10,14 +10,13 @@ To create a new project, we use the command leo new <project_name>.
 	•	In this example, we will create a new token project with a random name:
  leo new token_$RANDOM
 
- 	2.	
 	•	Alternatively, you can create the token project with a custom name:
  leo new token_custom_name
 
- 	2.	
 	•	Note: Make sure the project name is in lower case!
  leo new token_custom_name
 
+ 
  Commands to Run and Test the Project
 
 	1.	Enter the Project Directory:
@@ -35,8 +34,7 @@ Leo ✅ Compiled 'helloworld.aleo' into Aleo instructions
  • 'helloworld.aleo/main' - 33 constraints (called 1 time)
 ➡️  Output
  • 1u32
-
- 	2.	
+ 
 	•	You should see the output equal to 1u32.
 
 For more details about Aleo project interactions, check out this guide.
