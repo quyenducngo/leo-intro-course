@@ -1,46 +1,61 @@
-2. Create A New Token Project
+Great! Let's do the same for this step:
 
-Create the Project
 
-To create a new project, we use the command leo new <project_name>.
+# 2 Create A New Token Project
 
-	1.	Navigate to the Root Folder:
-	•	Ensure you are in the root folder of this LEO-INTRO-COURSE repository when creating a new project. (You must include your code in the repository for it to be considered finished.)
-	2.	Create a New Token Project:
-	•	In this example, we will create a new token project with a random name:
- leo new token_$RANDOM
+## [screenshot required] Create the project
+To create a new project, we use the command `leo new <project_name>`
 
-	•	Alternatively, you can create the token project with a custom name:
- leo new token_custom_name
+First Make sure you are at the root folder of this `LEO-INTRO-COURSE` repository when you are creating a new project. (You have to include your code in the repository to be considered as finished.)
 
-	•	Note: Make sure the project name is in lower case!
- leo new token_custom_name
+In this example, we will create a new token project:
+```bash
+leo new token_$RANDOM
+```
+You can also create the token with your custom name
+```bash
+leo new token_custom_name
+```
+Make sure everything is in lower case!
 
- 
- Commands to Run and Test the Project
+## Commands to run and test the project
 
-	1.	Enter the Project Directory:
-	•	After creating the project, navigate to the project directory:
- cd token_<your_project_name>
+Now that you have created the project, enter the project by:
+```bash
+cd token_...
+```
 
- 	2.	Build and Run the Program:
-	•	To build and run the program in main.leo, use the following command:
- leo run main 0u32 1u32 # build, setup, prove, and verify
+Then run below code to build and run the program in `main.leo`.
+```bash
+leo run main 0u32 1u32 # build & setup & prove & verify
 
- 	2.	
-	•	Expected Output:
+You output should be:
+
 Leo ✅ Compiled 'helloworld.aleo' into Aleo instructions
-Constraints
- • 'helloworld.aleo/main' - 33 constraints (called 1 time)
+⛓  Constraints
+ •'helloworld.aleo/main' - 33 constraints (called 1 time)
 ➡️  Output
  • 1u32
- 
-	•	You should see the output equal to 1u32.
+```
 
-For more details about Aleo project interactions, check out this guide.
+You should see the output equal to `1u32`.
 
-Project Folder Outline
+To learn more about the Aleo Project Interactions, check out [here](https://developer.aleo.org/leo/hello).
 
-Here is an outline of the project folder structure:
+## Project Folder Outline
+
+```bash
+.
+├── README.md
+├── build                   # Folder for all built `Aleo` files and manifest file.
+│   ├── main.aleo           # `.Leo` file will be built into `.aleo`
+│   └── program.json        # Program description file
+├── program.json            # Program description file
+├── src                     # Folder for all Program source codes
+│   └── main.leo            # Define your program logic here
+├── inputs                  # Folder for all input files
+├── outputs                 # Folder for all output files
+```
+
 <img width="886" alt="Screenshot 2024-06-02 at 1 23 51 PM" src="https://github.com/quyenducngo/leo-intro-course/assets/27698009/331c74ef-6e77-4dc1-8ff9-815cfc38dfa7">
 s
