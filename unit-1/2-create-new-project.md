@@ -42,13 +42,5 @@ For more details about Aleo project interactions, check out this guide.
 Project Folder Outline
 
 Here is an outline of the project folder structure:
-.
-├── README.md
-├── build                   # Folder for all built `Aleo` files and manifest file.
-│   ├── main.aleo           # `.leo` file will be built into `.aleo`
-│   └── program.json        # Program description file
-├── program.json            # Program description file
-├── src                     # Folder for all program source codes
-│   └── main.leo            # Define your program logic here
-├── inputs                  # Folder for all input files
-├── outputs                 # Folder for all output files
+<img width="886" alt="Screenshot 2024-06-02 at 1 23 51 PM" src="https://github.com/quyenducngo/leo-intro-course/assets/27698009/331c74ef-6e77-4dc1-8ff9-815cfc38dfa7">
+s
