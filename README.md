@@ -12,7 +12,8 @@ Our repo is continuously evolving. Upcoming tasks include completing more advanc
 
 ### Preliminaries
 
-- What is Aleo?
+### What is Aleo?
+
 Aleo is a cutting-edge blockchain platform that prioritizes privacy and scalability for decentralized applications (dApps). By leveraging zero-knowledge proofs, specifically zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge), Aleo enables developers to build secure, private, and efficient applications. Unlike traditional blockchains where transaction details are publicly visible, Aleo ensures that data remains confidential while still allowing the network to validate the correctness of transactions.
 
 Key features of Aleo include:
