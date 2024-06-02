@@ -30,7 +30,7 @@ To create a new project, we use the command leo new <project_name>.
  	2.	
 	•	Expected Output:
 Leo ✅ Compiled 'helloworld.aleo' into Aleo instructions
-⛓  Constraints
+Constraints
  • 'helloworld.aleo/main' - 33 constraints (called 1 time)
 ➡️  Output
  • 1u32
