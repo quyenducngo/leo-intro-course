@@ -1,77 +1,55 @@
-# 1 Setup Environment
+1. Setup Environment
 
-## Install Git and Rust
+Install Git and Rust
 
-- Install [Git](https://git-scm.com/downloads)
-- Install [Rust](https://www.rust-lang.org/tools/install)
+	1.	Install Git:
+	•	Follow the instructions on the Git website to download and install Git for your operating system.
+	2.	Install Rust:
+	•	Follow the instructions on the Rust website to download and install Rust.
 
-Note: After installation, if your `git` and `rustc` command doesn't work, try to close the current terminal window, open a new one, and try again.
+Note: After installation, if the git and rustc commands don’t work, try closing the current terminal window, opening a new one, and trying again.
 
-## [screenshot required] Install leo
+Install Leo
 
-Clone the `leo` repository
-
-```bash
-# Download the source code
+	1.	Clone the leo repository:
+ # Download the source code
 git clone https://github.com/AleoHQ/leo
 cd leo
-```
 
-Build and install `leo` CLI
-
-```bash
-# Build and install
+	2.	Build and install the leo CLI:
+ # Build and install
 cargo install --path .
-```
 
-Now to use leo, in your terminal, run:
-```bash
-leo
-```
+	3.	Verify the installation:
+ leo
+ 	3.	For more details on how to use the leo CLI, check out the Leo Commands Guide.
 
-For more details about how to use `leo` Cli, check out [here](https://developer.aleo.org/leo/commands)
+Install snarkOS
 
-## [screenshot required] Install snarkOS
-
-Clone the `snarkOS` repository
-
-```bash
-git clone https://github.com/AleoHQ/snarkOS.git --depth 1
+	1.	Clone the snarkOS repository:
+ git clone https://github.com/AleoHQ/snarkOS.git --depth 1
 cd snarkOS
-```
 
-[For Ubuntu users] A helper script to install dependencies is available. From the snarkOS directory, run:
+	2.	[For Ubuntu users] Run the helper script to install dependencies:
+ ./build_ubuntu.sh
 
-```bash
-./build_ubuntu.sh
-```
+ 	3.	Install snarkOS:
+  cargo install --path .
 
-Lastly, install snarkOS:
+  	4.	Ensure ports are open:
+	•	Make sure ports 4133/tcp and 3033/tcp are open on your router and OS firewall.
+For more details on how to use the snarkOS CLI, check out the snarkOS Installation Guide.
 
-```
-cargo install --path .
-```
+Install Leo IDE Syntax Highlighting
 
-Please ensure ports 4133/tcp and 3033/tcp are open on your router and OS firewall.
+Follow the guide here to set up syntax highlighting for Leo in your IDE.
 
-For more details about how to use `snarkOS` Cli, check out [here](https://developer.aleo.org/testnet/getting_started/installation/#22-installation).
+Docker Pull for Leo
 
-## Install `leo` IDE Syntax Highlighting:
+This is the development environment Docker image for the Aleo blockchain, which includes Leo, Rust, and Git installed.
 
-Check out Guide [Here](https://developer.aleo.org/leo/installation#3-ide-syntax-highlighting)
+	1.	Pull the Docker image:
+ docker pull 0xaragondocker/leo_docker:latest
 
-## Docker pull leo
-
-This is the development environment docker of aleo blockchain with leo, rust, and git installed.
-
-pull docker image
-
-```
-docker pull 0xaragondocker/leo_docker:latest
-```
-
-run docker
-
-```
-docker run -it 0xaragondocker/leo_docker /bin/bash
-```
+ 	2.	Run Docker:
+  docker run -it 0xaragondocker/leo_docker /bin/bash
