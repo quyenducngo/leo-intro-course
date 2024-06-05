@@ -47,7 +47,7 @@ Leo ✅ Compiled 'your_token_name' into Aleo instructions
 
 ➡️  Output
 
- • 1u32
+ • 1u32 # the output we're expecting
 ```
 
 4. You should see the output equal to `1u32`.
