@@ -26,6 +26,7 @@ cargo install --path .
 
 Now to use leo, in your terminal, run:
 ```bash
+# To run leo
 leo
 ```
 
